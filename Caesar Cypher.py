@@ -15,11 +15,11 @@ def decryption():
     text = str(input("Text: "))
     s = int(input("Shift: "))
     decrypt = ""
-    for char in text:
+    for x in text:
         if (text.isupper()):
-            decrypt += chr((ord(char) - s-65) % 26 + 65)
+            decrypt += chr((ord(x) - s-65) % 26 + 65)
         else:
-            decrypt += chr((ord(char) - s - 97) % 26 + 97)
+            decrypt += chr((ord(x) - s - 97) % 26 + 97)
     print("Encrypted text: " + decrypt)
     restart()
 
